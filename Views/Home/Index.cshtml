@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Set your desired background color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text-center {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .display-2 {
+            font-size: 3em; /* Adjust the font size as needed */
+            color: #3498db; /* Set your desired text color */
+            margin-bottom: 20px; /* Add some space below the heading */
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/css/Style.css">
+</head>
+<body>
+    <div class="text-center">
+            <h1 class="display-2">Welcome To<br>CodeWithPrem</h1>
+        <p> Hello Users </a>.</p>
+        @*<a href="/Home/SignUp">class="btn">Sign Up</a> *@<!-- Link to the Sign Up page -->
+        <a href="/Home/SignUp" class="btn">Sign Up</a>
+
+        @* <a href="/SignUp">Sign Up</a> *@<!-- Link to the Sign Up page -->
+
+    </div>
+
+    <div class="background-slider">
+        @Html.Partial("~/Views/Shared/imageslider.cshtml")
+    </div>
+
+    @*<script src="script.js"></script>*@
+</body>
+</html>

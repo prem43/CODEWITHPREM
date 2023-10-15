@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/Style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i> <!-- Font Awesome hamburger icon -->
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li> <a href="/Home/Index">Home</a></li>
+            <li> <a href="/Home/Privacy">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li>
+                <a href="#" onclick="showContactPopup()">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div id="contactPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeContactPopup()">&times;</span>
+            <h2>Contact Details</h2>
+            <p>Phone: 9123188119</p>
+            <p>Email: Codewithprem@gmail.com</p>
+            <p>Address: 1234 Phulwari Sharif, Patna, Bihar</p>
+            <p>GitHub Profile: <a href="https://github.com/prem43">https://github.com/prem43</a></p>
+            <p>LinkeDin: <a href="https://www.linkedin.com/in/prem-ranjan-4b5484279/">https://www.linkedin.com/in/prem-ranjan-4b5484279/</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleNav() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        function showContactPopup() {
+            const contactPopup = document.getElementById('contactPopup');
+            contactPopup.style.display = 'block';
+        }
+
+        function closeContactPopup() {
+            const contactPopup = document.getElementById('contactPopup');
+            contactPopup.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

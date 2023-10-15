@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Page</title>
+    <style>
+        /* Button styles */
+        .popup-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        /* Popup styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+        }
+
+        .close-button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <button class="popup-button" onclick="togglePopup()">Privacy Policy</button>
+
+    <div id="popup" class="popup">
+        <button class="close-button" onclick="togglePopup()">Close</button>
+        <p>HELLO MY SELF PREM AND I AM A FULLSTACK DEVELOPER. I AM FROM PATNA AND I HAVE COMPLETED MY DIPLOMA THROUGH CSE BRANCH.</p>
+    </div>
+
+    <script>
+        function togglePopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
